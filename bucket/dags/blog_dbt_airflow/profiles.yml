@@ -1,0 +1,13 @@
+blog_dbt_airflow:
+  outputs:
+    dev:
+      dbname: dev
+      cluster_id: blog-dbt-airflow
+      host: REPLACE_WITH_REDSHIFT_HOST
+      method: iam
+      port: 5439
+      schema: dbt
+      threads: 4
+      type: redshift
+      user: awsuser
+  target: dev
