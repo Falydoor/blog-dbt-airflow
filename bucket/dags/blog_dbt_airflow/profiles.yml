@@ -9,5 +9,5 @@ blog_dbt_airflow:
       schema: dbt
       threads: 4
       type: redshift
-      user: awsuser
+      user: admin
   target: dev
