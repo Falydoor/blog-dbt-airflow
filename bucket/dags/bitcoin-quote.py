@@ -10,7 +10,7 @@ import pandas as pd
 
 def save_quote():
     # Set headers
-    url = "https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC"
+    url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC"
     headers = {
         "Accepts": "application/json",
         "X-CMC_PRO_API_KEY": Variable.get('API_KEY')
