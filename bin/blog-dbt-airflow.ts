@@ -4,6 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { BlogDbtAirflowStack } from '../lib/blog-dbt-airflow-stack';
 
 const app = new cdk.App();
+cdk.Tags.of(app).add('ippon:owner', 'tlebrun')
 new BlogDbtAirflowStack(app, 'BlogDbtAirflowStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
